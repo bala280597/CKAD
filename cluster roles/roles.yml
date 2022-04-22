@@ -21,3 +21,6 @@ roleRef:
   kind: ClusterRole
   name: node-admin
   apiGroup: rbac.authorization.k8s.io
+  
+  # kubectl create clusterrolebinding node-admin --clusterrole node-admin --user michelle
+  # kubectl create clusterrole node-admin --resource nodes --verb list,create,delete,watch,get
